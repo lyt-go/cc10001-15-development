@@ -197,6 +197,18 @@ class LmcfgEntry(BaseModel):
     field_6: str | None = None  # 最近验证时间
     field_7: str | None = None  # 绑定代理
 
+class SessionEntry(BaseModel):
+    """采集会话明细结构。"""
+
+    field_0: str | None = None  # 会话编号
+    field_1: str | None = None  # 目标站点
+    field_2: str | None = None  # 凭证编号
+    field_3: str | None = None  # 反爬策略
+    field_4: str | None = None  # 绑定代理
+    field_5: str | None = None  # 生效UA
+    field_6: str | None = None  # 生效Referer
+    field_7: str | None = None  # 生效延迟
+
 class BlacklistEntry(BaseModel):
     """对抗策略明细结构。"""
 

@@ -16,6 +16,7 @@ const Scheduler = () => import('@/views/scheduler/index.vue')
 const Exportconf = () => import('@/views/exportconf/index.vue')
 const Lmcfg = () => import('@/views/lmcfg/index.vue')
 const Blacklist = () => import('@/views/blacklist/index.vue')
+const Session = () => import('@/views/session/index.vue')
 const Storagelog = () => import('@/views/storagelog/index.vue')
 const Templatelib = () => import('@/views/templatelib/index.vue')
 const Datalabel = () => import('@/views/datalabel/index.vue')
@@ -39,6 +40,7 @@ const router = createRouter({
     { path: '/exportconf', name: 'exportconf', component: Exportconf },
     { path: '/lmcfg', name: 'lmcfg', component: Lmcfg },
     { path: '/blacklist', name: 'blacklist', component: Blacklist },
+    { path: '/session', name: 'session', component: Session },
     { path: '/storagelog', name: 'storagelog', component: Storagelog },
     { path: '/templatelib', name: 'templatelib', component: Templatelib },
     { path: '/datalabel', name: 'datalabel', component: Datalabel },
